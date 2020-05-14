@@ -32,7 +32,6 @@ input {
   display: none;
 }
 
-
 .button::after {
   content: "";
   border-top: 30px solid transparent;
@@ -48,6 +47,28 @@ input {
   border-top: 30px solid #fff;
   border-bottom: 30px solid #fff;
   border-left: 10px solid transparent;
+  position: absolute; 
+  right: 0px;
+  top: 0;
+  z-index: 1;
+}
+
+.button-first::after {
+  content: "";
+  border-top: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+  border-left: 0px solid transparent;
+  position: absolute; 
+  right: 0px;
+  top: 0;
+  z-index: 1;
+}
+
+.button-last::before {
+  content: "";
+  border-top: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+  border-left: 0px solid transparent;
   position: absolute; 
   right: 0px;
   top: 0;
